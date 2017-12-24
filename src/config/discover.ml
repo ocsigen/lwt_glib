@@ -1,4 +1,3 @@
-
 (* This is largely based on the Glib-related code in the main build system,
    though rewritten somewhat. *)
 

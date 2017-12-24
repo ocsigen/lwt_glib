@@ -1,0 +1,23 @@
+opam-version: "1.2"
+
+version: "dev"
+homepage: "https://github.com/aantron/lwt_glib"
+doc: "https://github.com/aantron/lwt_glib/blob/master/src/lwt_glib.mli"
+bug-reports: "https://github.com/aantron/lwt_glib/issues"
+license: "LGPL with OpenSSL linking exception"
+
+authors: "Jérémie Dimino"
+maintainer: "Anton Bachin <antonbachin@yahoo.com>"
+dev-repo: "https://github.com/aantron/lwt_glib.git"
+
+depends: [
+  "base-unix"
+  "conf-glib-2" {build}
+  "conf-pkg-config" {build}
+  "jbuilder" {build & >= "1.0+beta10"}
+  "lwt" {>= "3.0.0"}
+]
+
+build: [
+  ["jbuilder" "build" "-p" name "-j" jobs]
+]
