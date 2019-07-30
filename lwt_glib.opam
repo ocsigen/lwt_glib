@@ -1,20 +1,22 @@
-opam-version: "1.2"
+opam-version: "2.0"
+
+synopsis: "GLib integration for Lwt"
 
 version: "dev"
-homepage: "https://github.com/aantron/lwt_glib"
-doc: "https://github.com/aantron/lwt_glib/blob/master/src/lwt_glib.mli"
-bug-reports: "https://github.com/aantron/lwt_glib/issues"
-license: "LGPL with OpenSSL linking exception"
+license: "LGPL"
+homepage: "https://github.com/ocsigen/lwt_glib"
+doc: "https://github.com/ocsigen/lwt_glib/blob/master/src/lwt_glib.mli"
+bug-reports: "https://github.com/ocsigen/lwt_glib/issues"
 
 authors: "Jérémie Dimino"
 maintainer: "Anton Bachin <antonbachin@yahoo.com>"
-dev-repo: "https://github.com/aantron/lwt_glib.git"
+dev-repo: "https://github.com/ocsigen/lwt_glib.git"
 
 depends: [
   "base-unix"
   "conf-glib-2" {build}
   "conf-pkg-config" {build}
-  "dune" {build & >= "1.0"}
+  "dune"
   "lwt" {>= "3.0.0"}
 ]
 
