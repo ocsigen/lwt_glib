@@ -1,4 +1,4 @@
-===== Lwt_glib 1.1.1 (2018-07-30) =====
+===== 1.1.1 (2018-07-30) =====
 
   * Move Lwt_glib to a separate repo.
   * Fix internal helper (#1, Frédéric Bour).
