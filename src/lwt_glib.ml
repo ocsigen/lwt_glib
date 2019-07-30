@@ -119,6 +119,7 @@ let install ?(mode=`lwt_into_glib) () =
     | `glib_into_lwt ->
       state := State_glib_into_lwt(Lwt_sequence.add_l enter Lwt_main.enter_iter_hooks,
                                    Lwt_sequence.add_l leave Lwt_main.leave_iter_hooks)
+      [@ocaml.warning "-3"]
     | `lwt_into_glib ->
       let engine = Lwt_engine.get () in
       Lwt_engine.set ~destroy:false (new engine);

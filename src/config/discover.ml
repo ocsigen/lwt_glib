@@ -11,7 +11,7 @@ let pkg_config arguments =
   let command = Printf.sprintf "pkg-config %s" arguments in
   let input_channel = Unix.open_process_in command in
   let result =
-    try Pervasives.input_line input_channel
+    try input_line input_channel
     with End_of_file -> ""
   in
   let status = Unix.close_process_in input_channel in
