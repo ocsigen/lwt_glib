@@ -1,3 +1,10 @@
+===== Lwt_glib 1.1.1 (2018-07-30) =====
+
+  * Move Lwt_glib to a separate repo.
+  * Fix internal helper (#1, Frédéric Bour).
+  * Upgrade from Jbuilder to Dune (f8269a1).
+  * Fix deprecation warnings due to OCaml 4.08 and Lwt development (9f50a15).
+
 ===== Lwt 3.1.0 (2017-07-19) =====
 
 ====== Miscellaneous ======
