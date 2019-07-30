@@ -10,7 +10,7 @@ bug-reports: "https://github.com/ocsigen/lwt_glib/issues"
 
 authors: "Jérémie Dimino"
 maintainer: "Anton Bachin <antonbachin@yahoo.com>"
-dev-repo: "https://github.com/ocsigen/lwt_glib.git"
+dev-repo: "git+https://github.com/ocsigen/lwt_glib.git"
 
 depends: [
   "base-unix"
