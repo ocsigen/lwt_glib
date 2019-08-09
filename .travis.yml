@@ -17,9 +17,9 @@ matrix:
     - os: linux
       env: COMPILER=4.07.1
     - os: linux
-      env: COMPILER=4.08.0
+      env: COMPILER=4.08.1
     - os: osx
-      env: COMPILER=4.08.0
+      env: COMPILER=4.08.1
 
 script: bash -e src/travis.sh
 
