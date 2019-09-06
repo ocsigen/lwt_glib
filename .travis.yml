@@ -25,7 +25,5 @@ script: bash -e src/travis.sh
 
 notifications:
   email:
-    recipients:
-      - antonbachin@yahoo.com
     on_success: always
     on_failure: always
