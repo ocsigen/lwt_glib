@@ -23,6 +23,11 @@ matrix:
 
 script: bash -e src/travis.sh
 
+cache:
+  directories:
+    - $HOME/.opam
+    - ./_opam
+
 notifications:
   email:
     on_success: always
