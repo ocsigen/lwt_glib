@@ -62,3 +62,9 @@ if [ "$COMPILER" != "4.02.3" ]
 then
     opam install -y 0install
 fi
+
+
+
+opam remove -y lwt_glib
+opam pin remove -y lwt_glib
+opam clean
