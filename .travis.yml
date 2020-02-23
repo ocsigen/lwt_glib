@@ -43,7 +43,7 @@ install:
         ;;
     esac
 
-  - VERSION=2.0.5
+  - VERSION=2.0.6
   - FILENAME=opam-$VERSION-x86_64-$OS
   - wget https://github.com/ocaml/opam/releases/download/$VERSION/$FILENAME
   - sudo mv $FILENAME /usr/local/bin/opam
